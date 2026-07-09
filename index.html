@@ -29,8 +29,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#writing">Writing</a></li>
       <li><a href="#certs">Certs</a></li>
-      <li><a href="#resume">Resume</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <button class="nav-burger" id="burger" aria-label="Toggle navigation menu">
@@ -52,7 +52,7 @@
           and build practical projects that bridge offensive security testing with defensive mitigation.</p>
         <div class="hero-actions">
           <a href="#projects" class="btn btn-primary">View Projects</a>
-          <a href="#resume" class="btn btn-outline">Download Resume</a>
+          <a href="Resume.pdf" download="Rishii_Bharadhwaj_Resume.pdf" class="btn btn-outline">Download Resume</a>
           <a href="#contact" class="btn btn-outline">Contact Me</a>
         </div>
       </div>
@@ -126,11 +126,11 @@
     </div>
   </section>
 
-  <!-- SKILLS & HANDS-ON LABS -->
+  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
       <span class="sec-label">02 — Expertise</span>
-      <h2 class="sec-title">Skills &amp; Experience</h2>
+      <h2 class="sec-title">Skills</h2>
 
       <!-- Core Skills List -->
       <div class="skills-layout">
@@ -179,58 +179,14 @@
         </div>
       </div>
 
-      <!-- Security Labs Section -->
-      <div class="labs-container reveal" style="margin-top: 80px;">
-        <h3 class="labs-section-title">Hands-on Security Experience</h3>
-        <div class="labs-grid">
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <span class="lab-icon">🌐</span>
-              <h4>Web Application Testing</h4>
-            </div>
-            <p>Practiced identifying common web vulnerabilities including XSS, XXE, SSRF, SQL Injection, Directory
-              Traversal, and Authentication weaknesses.</p>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <span class="lab-icon">🐧</span>
-              <h4>Linux Privilege Escalation</h4>
-            </div>
-            <p>Performed privilege escalation exercises across Linux environments while understanding system
-              misconfigurations and permissions.</p>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <span class="lab-icon">📡</span>
-              <h4>Network Analysis</h4>
-            </div>
-            <p>Captured and analyzed packets using Wireshark to understand protocols, traffic behavior, and attack
-              patterns.</p>
-          </div>
-
-          <div class="lab-card">
-            <div class="lab-header">
-              <span class="lab-icon">🏁</span>
-              <h4>CTF Practice</h4>
-            </div>
-            <p>Solved practical cybersecurity challenges involving cryptography, forensics, reverse engineering, web
-              exploitation, and OSINT.</p>
-          </div>
-
-        </div>
-      </div>
-
     </div>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
-      <span class="sec-label">03 — Showcases</span>
-      <h2 class="sec-title">Featured Projects</h2>
+      <span class="sec-label">03 — Projects</span>
+      <h2 class="sec-title">Projects</h2>
       <div class="projects-grid">
 
         <!-- Project 1: SIEM Dashboard -->
@@ -295,67 +251,40 @@
           </div>
         </div>
 
-        <!-- Project 2: LLM Integrated Honeypot -->
-        <div class="project-card reveal reveal-delay-1">
-          <div class="proj-header">
-            <div>
-              <span class="proj-title">LLM Integrated Honeypot</span>
-              <p class="proj-subtitle">Dynamic Threat Simulation</p>
-            </div>
-            <span class="proj-badge badge-wip">In Progress</span>
-          </div>
-
-          <div class="proj-body">
-            <div class="proj-section">
-              <span class="proj-label">Problem:</span>
-              <p class="proj-text">Traditional honeypots use static systems that attackers easily identify as fake and
-                bypass, limiting threat intel gathering.</p>
-            </div>
-            <div class="proj-section">
-              <span class="proj-label">Solution:</span>
-              <p class="proj-text">Integrated Ollama with a honeypot system to simulate realistic attacker
-                interaction, generate dynamic responses, and log attacker behaviour for analysis.</p>
-            </div>
-            <div class="proj-section">
-              <span class="proj-label">Challenges:</span>
-              <p class="proj-text">Designing secure virtualization boundaries that protect the host system while
-                allowing attackers to type fully responsive shell commands.</p>
-            </div>
-            <div class="proj-section">
-              <span class="proj-label">Key Features:</span>
-              <ul class="proj-list">
-                <li>Ollama LLM dynamic shell emulation</li>
-                <li>In-depth interaction command logs</li>
-                <li>Attacker profile tracking</li>
-                <li>System compromise simulation</li>
-              </ul>
-            </div>
-            <div class="proj-section">
-              <span class="proj-label">What I Learned:</span>
-              <p class="proj-text">Interactive shell parsing, Docker containment, local AI deployment, telemetry
-                pipelines.</p>
-            </div>
-          </div>
-
-          <div class="proj-tech">
-            <span class="tech-chip">Python</span>
-            <span class="tech-chip">Networking</span>
-            <span class="tech-chip">LLM / Ollama</span>
-            <span class="tech-chip">Docker</span>
-          </div>
-
-          <div class="proj-links">
-            <a href="https://github.com/RISHII-BHARADHWAJ" target="_blank" class="btn btn-outline btn-sm">GitHub</a>
-          </div>
-        </div>
-
       </div>
 
-      <!-- CERTIFICATIONS & LEARNING -->
-      <section id="certs" class="reveal">
-        <div class="container">
-          <span class="sec-label">04 — Accomplishments</span>
-          <h2 class="sec-title">Certifications &amp; Learning</h2>
+    </div>
+  </section>
+
+  <!-- TECHNICAL WRITING -->
+  <section id="writing" class="reveal">
+    <div class="container">
+      <span class="sec-label">04 — ARTICLES</span>
+      <h2 class="sec-title">Technical Writing</h2>
+      <p class="section-desc">I document my learning journey through detailed cybersecurity write-ups, walkthroughs, and technical articles focused on offensive security and CTF challenges.</p>
+      
+      <div id="articles-grid" class="articles-grid">
+        <!-- Rendered dynamically by script.js -->
+      </div>
+
+      <div class="writing-actions">
+        <a href="https://medium.com/@whitedevilrishii" target="_blank" class="btn btn-outline">
+          View All on Medium
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS & LEARNING -->
+  <section id="certs" class="reveal">
+    <div class="container">
+      <span class="sec-label">05 — Accomplishments</span>
+      <h2 class="sec-title">Certifications &amp; Learning</h2>
           <div class="certs-grid">
 
             <div class="cert-card">
@@ -403,30 +332,6 @@
           </div>
         </div>
       </section>
-
-  <!-- RESUME SECTION -->
-  <section id="resume">
-    <div class="container">
-      <span class="sec-label">05 — Credentials</span>
-      <h2 class="sec-title">Resume &amp; Availability</h2>
-      <div class="resume-card-container reveal">
-        <div class="resume-content-box">
-          <div class="resume-meta">
-            <h3>H. Rishii Bharadhwaj</h3>
-            <p class="resume-subtitle">Undergraduate Student / Cybersecurity Analyst</p>
-            <div class="avail-box">
-              <span class="avail-dot"></span>
-              <p>Available For: <strong>Internships, Freelance, Open Source Collaboration</strong></p>
-            </div>
-          </div>
-          <div class="resume-actions-grid">
-            <a href="resume.pdf" download class="btn btn-primary">Download Resume</a>
-            <a href="resume.pdf" target="_blank" class="btn btn-outline">View Resume</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -503,6 +408,7 @@
     </svg>
   </button>
 
+  <script src="articles.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 

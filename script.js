@@ -40,6 +40,49 @@ window.addEventListener('scroll', () => {
     a.classList.toggle('active', a.getAttribute('href') === '#' + current);
   });
 }, { passive: true });
+// ── RENDER ARTICLES
+const articlesGrid = document.getElementById('articles-grid');
+if (articlesGrid && typeof articles !== 'undefined') {
+  articles.forEach((art, index) => {
+    const card = document.createElement('div');
+    card.className = `article-card reveal reveal-delay-${(index % 4) + 1}`;
+    
+    card.addEventListener('click', () => {
+      window.open(art.url, '_blank');
+    });
+
+    const tagsHtml = art.tags.map(tag => `<span class="article-tag">${tag}</span>`).join('');
+
+    card.innerHTML = `
+      <div class="article-image-container">
+        <img class="article-image" src="${art.coverImage}" alt="${art.title}" loading="lazy" />
+      </div>
+      <div class="article-content">
+        <div class="article-meta">
+          <span class="article-date">${art.published}</span>
+          <span class="article-dot">•</span>
+          <span class="article-read-time">${art.readTime}</span>
+        </div>
+        <h3 class="article-title">${art.title}</h3>
+        <p class="article-summary">${art.description}</p>
+        <div class="article-tags">
+          ${tagsHtml}
+        </div>
+        <div class="article-footer">
+          <span class="article-link">
+            Read on Medium
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </span>
+        </div>
+      </div>
+    `;
+    articlesGrid.appendChild(card);
+  });
+}
 
 // ── REVEAL ON SCROLL
 const reveals = document.querySelectorAll('.reveal');
